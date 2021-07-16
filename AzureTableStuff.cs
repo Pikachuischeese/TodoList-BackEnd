@@ -11,7 +11,7 @@ namespace TodoApi
 
     public class AzureTableStuff
     {
-        static CloudStorageAccount storageAccount = CreateStorageAccountFromConnectionString("DefaultEndpointsProtocol=https;AccountName=pikachuischeese;AccountKey=SvONmCD2Ji0rmPxKUV4PjrXIzALF6hlgGo5sKweeDTohCoXrhTFMqUFpTw5PLD5zgjrHTFF81BSFGOdIQiu89g==;TableEndpoint=https://pikachuischeese.table.cosmos.azure.com:443/;");
+        static CloudStorageAccount storageAccount = CreateStorageAccountFromConnectionString("<AddConnectionKeyHere>");
         static CloudTable TodoList = CreateTable("TodoList");
 
         public static CloudStorageAccount CreateStorageAccountFromConnectionString(string storageConnectionString)
